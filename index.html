@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Live Weather App</title>
+        <meta charset="UTF-8">
+        <script src="code.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body>
+
+        <div id="title">Live Weather</div>
+
+        <div id="search-container">
+            <span id="search-icon" class="material-symbols-outlined">location_on</span>
+            <input id="search-bar" type="search" name="search-bar" placeholder="city...">
+        </div>
+
+        <div id="city-container">
+            <div id="city">Perth, WA</div>
+            <img src="australia.svg" width=130px id="city-flag">
+        </div>
+    
+        <div id="temp-container">
+            <div id="temperature">19oC</div>
+            <img src="cloudy.svg" width=70px id="temp-logo">
+        </div>
+
+        <div id="detail-container">
+            Feels like 19oC
+            | broken clouds | Humidity: 73%
+            | Sunrise: 15:09 | Sunset: 04:53
+        </div>
+
+        <div id="units-switch">
+            <div id="celsius" class="temp-switch">C</div>
+            <div id="farenheit" class="temp-switch">F</div>
+        </div>
+
+        <div id="current-time">19:37:22</div>
+
+    </body>
+</html>
