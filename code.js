@@ -15,12 +15,16 @@ api_key = '08765f190fba76c5d960c12c6b7f349e'
 
 async function callWeather(city) {
     city = searchCity.value;
-    console.log(city);
     link = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+api_key+'&units=metric';
     const response = await fetch(link, {mode: 'cors'});
-    response.json().then(function(response) {
-        processObject(response);
-    });
+        response.json().then(function(response) {
+            try {
+                processObject(response);
+                console.log('City located: '+city);
+            } catch (e) {
+                console.log('Error: City not found.')
+            }
+        });
 }
 
 function processObject(response) {
@@ -49,4 +53,6 @@ function updateDOM(city,country,temp,feelsLike,weather,humidity,sunrise,sunset) 
 
 // Listens to changes in the search bar, to fire the async function and update the DOM
 searchCity = document.getElementById('search-bar');
-searchCity.addEventListener('input', callWeather.bind(searchCity.value));
+searchCity.addEventListener('input', callWeather.bind(searchCity));
+
+// callWeather('Brisbane');        // Call and display Brisbanes weather by default
