@@ -66,5 +66,29 @@ function getCountryCode(country) {
     return link
 }
 
+// Converting units via the button
+unitSwitch = document.getElementById('units-switch');
+unitSwitch.addEventListener('click', () => convUnits());
+
+let units = 'celsius';
+function convUnits() {
+    if (units=='celsius') {
+        // Converting the main temp
+        temp1 = document.getElementById('temperature').innerHTML.split('<s')[0];
+        convValue = Math.round(((parseFloat(temp1)*(9/5))+32)* 10)/10;
+        document.getElementById('temperature').innerHTML = convValue + '<sup>o</sup>F';
+        units = 'farenheit';
+        return
+    }
+    if (units=='farenheit') {
+        // Converting the main temp
+        temp1 = document.getElementById('temperature').innerHTML.split('<s')[0];
+        convValue = Math.round(((parseFloat(temp1)-32)*(5/9))* 10)/10;
+        document.getElementById('temperature').innerHTML = convValue + '<sup>o</sup>C';
+        units = 'celsius';
+        return
+    }
+}
+
 
 // callWeather('Brisbane');        // Call and display Brisbanes weather by default
