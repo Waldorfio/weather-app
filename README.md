@@ -1,6 +1,6 @@
 # Project: Live Weather Application
 ### [Live Link 👈](https://waldorfio.github.io/weather-app/)
-An live weather application, built off the OpenWeather API. Application built using vanilla JavaScript ES6, CSS3, and HTML5.
+A live weather application, built off the OpenWeather API. Application built using vanilla JavaScript ES6, CSS3, and HTML5.
 Packaged using Webpack.
 
 ### Goal
