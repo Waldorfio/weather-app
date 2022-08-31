@@ -15,7 +15,7 @@ api_key = '08765f190fba76c5d960c12c6b7f349e'
 
 async function callWeather(city) {
     city = searchCity.value;
-    link = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+api_key+'&units=metric';
+    link = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+api_key+'&units=metric';
     const response = await fetch(link, {mode: 'cors'});
         response.json().then(function(response) {
             try {
