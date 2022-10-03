@@ -1,9 +1,13 @@
-# Project: Live Weather Application
-### [Live Link 👈](https://waldorfio.github.io/weather-app/)
-A live weather application, built off of the OpenWeather API. Application built using vanilla JavaScript ES6, CSS3, and HTML5.
-Packaged using Webpack.
+# Project: Live Weather App
+A live weather application, built off of the OpenWeather API.
+Application developed using JavaScript, CSS3, and HTML5. Packaged using Webpack.
 
-### Goal
+### Features
+- Search bar for cities across the world
+- Instantly load the weather results without refreshing the page
+- Celsius/Farenheit converter
+
+### Goals
 - To practice working with external API's and servers.
 - To create asynchronous code within a useable scenario.
 
@@ -11,3 +15,21 @@ Packaged using Webpack.
 - Neatly catching and handling errors.
 - Preventing the inversion of control through the use of callbacks.
 - Avoid falling into 'callback hell'
+
+## How to run the app
+### 1. Click the hosted link below
+#### [Live Link 👈](https://waldorfio.github.io/weather-app/)
+
+OR
+
+### 2. Host it locally
+1.	Either fork or download the app and open the folder in the cli
+2.	Install all dependencies using the `npm i` command
+3.	Start the web server using the `npm run local` command. The app will be served at http://localhost:8080/
+4.	Go to  http://localhost:8080/ in your browser, and start playing the game!
+
+## Future Features
+- Update page with images of local weather
+- Update background with animater CSS based on weather
+
+## Dependencies
