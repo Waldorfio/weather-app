@@ -1,9 +1,9 @@
 # Project: Live Weather App
-A live weather application, built off of the OpenWeather API.
+A live weather application, built using the OpenWeather API.
 Application developed using JavaScript, CSS3, and HTML5. Packaged using Webpack.
 
 ### Features
-- Search bar for cities across the world
+- Search bar for with real-time updating of searched cities
 - Instantly load the weather results without refreshing the page
 - Celsius/Farenheit converter
 
@@ -14,7 +14,6 @@ Application developed using JavaScript, CSS3, and HTML5. Packaged using Webpack.
 ### Challenges Faced
 - Neatly catching and handling errors.
 - Preventing the inversion of control through the use of callbacks.
-- Avoid falling into 'callback hell'
 
 ## How to run the app
 ### 1. Click the hosted link below
@@ -30,6 +29,6 @@ OR
 
 ## Future Features
 - Update page with images of local weather
-- Update background with animater CSS based on weather
+- Update background with animated CSS based on local weather
 
 ## Dependencies
