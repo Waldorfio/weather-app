@@ -32,3 +32,8 @@ OR
 - Update background with animated CSS based on local weather
 
 ## Dependencies
+- CSS Loader
+- File Loader
+- Style Loader
+- Webpack CLI
+- OpenWeather API
